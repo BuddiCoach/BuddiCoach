@@ -1,0 +1,40 @@
+font used: Monteserat 
+
+font-color : #1a1a1a
+background-color: #f9f9f9
+primary color: #08aac7
+secondary-form color: 10d3f5
+link color: #08aac7
+
+
+
+font-size
+nav-bar : 14px normal 
+home-paragraph: 12px normal
+home-banner-heading: 36px normal
+form-font : 12px light
+
+
+note:
+use fade in and fade out transition effects on dashboard transitions
+
+
+dashboard fonts in order
+14px
+12px
+10px
+
+
+use font-awesome-icon set to put in forms(secondary color) tabs and navbar for account , + sign in dashboard. 
+do well to read the font-awesome doc
+
+account --> http://fontawesome.io/icon/user-o/
+password --> http://fontawesome.io/icon/key/
+add --> http://fontawesome.io/icon/plus
+chart --> http://fontawesome.io/icon/line-chart
+coach --> http://fontawesome.io/icon/thumbs-o-up
+budget --> http://fontawesome.io/icon/money/
+
+
+please the box close to the buddicoach header is a placeholder for the actual logo.
+it will be built later on
