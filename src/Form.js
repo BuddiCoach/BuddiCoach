@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import {Link} from 'react-router-dom';
 
 
 
@@ -15,10 +16,10 @@ class Form extends Component {
           </form>
              </div>
                 <div className="app-btn">
-                  <button className="btn1" type="submit" >Sign in</button>
+                  <button className="btn1" type="submit">Sign in</button>
                 </div>
                  <div className="app-signup">
-                    <p>Don't have an account? <a className="link" href="#"> Sign Up here</a></p>  
+                    <p>Don't have an account? <Link className="link" to="#"> Sign Up here</Link></p>  
                 </div>
               </div>  
         )
