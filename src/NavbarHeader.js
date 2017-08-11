@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import {Link} from 'react-router-dom';
 
 
 
@@ -8,9 +9,9 @@ class NavbarHeader extends Component {
         return(
          <div className="App-navbar">
           <ul className="nav-navbar">
-            <li>Fork Us</li>
-            <li>Contact Us</li>
-            <li>FAQ</li>
+            <li ><Link to="/#">Fork Us</Link></li>
+            <li><Link to="/#">Contact Us</Link></li>
+            <li><Link to="/#">FAQ</Link></li>
           </ul>
         </div>
         )

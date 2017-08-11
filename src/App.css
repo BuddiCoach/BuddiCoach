@@ -16,21 +16,26 @@ body {
   align-items: flex-start;
   align-content: space-between;
   list-style: none;
-  font-size: 14px;
+  font-size: 14px; 
 }
 
-li {
+
+
+li a {
   margin-top: 1.3em;
   margin-right: 1.5em;
   color: #333;
+  text-decoration: none;
 }
 
 li:last-child {
   margin-right: 3em;
 }
 
-li:hover {
+li a:hover {
   color: #08aac7;
+  
+  
 }
 
 
