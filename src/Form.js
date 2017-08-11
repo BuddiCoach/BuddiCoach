@@ -15,7 +15,7 @@ class Form extends Component {
           </form>
              </div>
                 <div className="app-btn">
-                  <button className="btn1" type="submit" >Sign in</button>
+                  <button className="btn1" type="submit">Sign in</button>
                 </div>
                  <div className="app-signup">
                     <p>Don't have an account? <a className="link" href="#"> Sign Up here</a></p>  
