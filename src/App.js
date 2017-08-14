@@ -1,8 +1,8 @@
 import React, {Component} from 'react';
-import './App.css';
-import NavbarHeader from './NavbarHeader';
-import AppName from './AppName';
-import Form from './Form'
+import './signInComponents/signIn.css';
+import NavbarHeader from './signInComponents/NavbarHeader';
+import AppName from './signInComponents/AppName';
+import Form from './signInComponents/Form'
 
 class App extends Component {
 
@@ -11,6 +11,7 @@ class App extends Component {
       .then(response => response.json())
       .then(json => this.setState({message: json}));
   }
+    
 
   render() {
     return (
