@@ -1,8 +1,9 @@
 import React, {Component} from 'react';
-import './signInComponents/signIn.css';
-import NavbarHeader from './signInComponents/NavbarHeader';
-import AppName from './signInComponents/AppName';
-import Form from './signInComponents/Form'
+import { Route } from 'react-router-dom';
+import SignIn from './componentSignIn/SignIn';
+import DashboardHeader from './componentDashboard/dashboardHeader';
+import './componentDashboard/dashboard.css'
+
 
 class App extends Component {
 
@@ -16,10 +17,13 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <NavbarHeader/>
-        <div className="container">
-          <AppName/>
-          <Form/>
+         <Route exact path="/" render={() => (
+        <SignIn />
+        )}/> 
+        <div>
+        <Route exact path="/dashboard/" render={() => (
+          <DashboardHeader />
+        )}/> 
         </div>
       </div>
     );

@@ -57,10 +57,10 @@ clearInput = () => {
           </form>
              </div>
                 <div className="app-btn">
-                  <button onClick={this.clearInput} className="btn1" type="submit">Sign in</button>
+                  <button onClick={this.clearInput} className="btn1" type="submit"><Link className="signin" to="/dashboard"> Sign in</Link></button>
                 </div>
                  <div className="app-signup">
-                    <p>Don't have an account? <Link className="link" to="#"> Sign Up here</Link></p>  
+                    <p>Don't have an account? <Link className="signup" to="/#"> Sign Up here</Link></p>  
                 </div>
               </div>  
         )
