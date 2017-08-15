@@ -33,11 +33,8 @@ li:last-child {
 }
 
 li a:hover {
-  color: #08aac7;
-  
-  
+  color: #08aac7; 
 }
-
 
 /* =================
    End-NavbarHeader     
@@ -48,7 +45,6 @@ li a:hover {
 /*==================
        AppName
   =================*/
-
 .container {
   margin-top: 10em;
   margin-left: 9em;
@@ -64,6 +60,7 @@ h1 {
   color: #08aac7;
 }
 
+
 .app-logo{
  display:flex;
 }
@@ -71,14 +68,12 @@ h1 {
   border:4px solid black;
   border-radius: 3px;
   height: 50%;
-  padding:21px; 
-  
+  padding:19px;  
 }
 
 .home-par{
   margin-top: 0;
 }
-
 /*====================
   end-AppName
 =====================*/
@@ -87,12 +82,12 @@ h1 {
 /*==================
        Form         
 ====================*/
-p {
+span {
   font-size: 12px;
 }
 
 
-.link {
+.signup {
   color: #08aac7;
   text-decoration: none;
 }
@@ -136,6 +131,12 @@ input[type=text],
 .app-signup {
   font-size: 14px;
   margin-left: 9em;
+  
+}
+
+.signin{
+  text-decoration: none;
+  color: #000;
 }
 /*=================
       end-Form

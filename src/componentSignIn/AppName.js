@@ -16,7 +16,6 @@ class AppName extends Component {
              amet neque vel lectus imperdiet posuere.  
           </p>
          </div>
-         
        </div>
     )
   }   
