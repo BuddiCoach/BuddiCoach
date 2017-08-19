@@ -1,8 +1,7 @@
 import React, {Component} from 'react';
 import { Route } from 'react-router-dom';
 import SignIn from './componentSignIn/SignIn';
-import DashboardHeader from './componentDashboard/dashboardHeader';
-import './componentDashboard/dashboard.css'
+import Dashboard from './componentDashboard/Dashboard'
 
 
 class App extends Component {
@@ -22,8 +21,11 @@ class App extends Component {
         )}/> 
         <div>
         <Route exact path="/dashboard/" render={() => (
-          <DashboardHeader />
+          <Dashboard />
         )}/> 
+        <div>
+        
+        </div>
         </div>
       </div>
     );
