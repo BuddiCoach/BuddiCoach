@@ -1,7 +1,8 @@
 import React, {Component} from 'react';
 import { Route } from 'react-router-dom';
 import SignIn from './componentSignIn/SignIn';
-import Dashboard from './componentDashboard/Dashboard'
+import Dashboard from './componentDashboard/Dashboard';
+import SignUp from "./componentSignUp/SignUp";
 
 
 class App extends Component {
@@ -16,16 +17,20 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-         <Route exact path="/" render={() => (
+         <Route exact path="/" render={() => 
         <SignIn />
-        )}/> 
+        }/> 
         <div>
-        <Route exact path="/dashboard/" render={() => (
+        <Route exact path="/dashboard/" render={() => 
           <Dashboard />
-        )}/> 
+        }/> 
         <div>
-        
+          <Route exact path="/signup/" render={() => 
+          <SignUp />
+          }/>
         </div>
+        
+        
         </div>
       </div>
     );

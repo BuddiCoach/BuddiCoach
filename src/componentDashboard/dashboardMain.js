@@ -14,7 +14,10 @@ class DashboardMain extends Component {
                 <li className="list"><Link to="/">Chart</Link></li>
                 </ul>
                 <ul className="dashboard-middle">
-                <h4 className="head1">Add Budget<Link to="/" className="svg-btn"></Link></h4>
+                <div>
+                <h4 className="head1">Add Budget</h4>
+                <svg className="svg-btn"></svg>
+                </div>
                  <li className="list"><Link to="/">Christmas</Link></li>
                  <li className="list" ><Link to="/">Black friday</Link></li>
                  <li className="list"><Link to="/">Tony's birthday</Link></li>

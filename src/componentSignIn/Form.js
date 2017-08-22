@@ -39,28 +39,28 @@ clearInput = () => {
         return (
         <div className="group-form">
          <div className="section-form">
-           <form>
+             <form>
                <i className="fa fa-user"/>
-              <input  type="text"
+              <input className="username" type="text"
                       placeholder="enter username" 
                       name="name" 
                       value={username}
                       onChange={(event)=> this.updateUsername(event.target.value)}
                       />
               <i className="fa fa-key"/>
-              <input type="password"
+              <input className="password" type="password"
                      placeholder="enter password"
                      name="password"
                      value={password}
                      onChange={(event)=> this.updatePassword(event.target.value)} 
                      />  
-          </form>
+               </form>
              </div>
                 <div className="app-btn">
                   <button onClick={this.clearInput} className="btn1" type="submit"><Link className="signin" to="/dashboard"> Sign in</Link></button>
                 </div>
                  <div className="app-signup">
-                    <p>Don't have an account? <Link className="signup" to="/#"> Sign Up here</Link></p>  
+                    <p>Don't have an account? <Link className="signup" to="/signup"> Sign Up here</Link></p>  
                 </div>
               </div>  
         )

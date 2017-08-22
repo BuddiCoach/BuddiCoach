@@ -36,6 +36,10 @@ li a:hover {
   color: #08aac7; 
 }
 
+li a:focus {
+  color: #08aac7; 
+}
+
 /* =================
    End-NavbarHeader     
    ================= */
@@ -99,11 +103,12 @@ span {
   width: 350px;
 }
 
-input[type=text],
-[type=password] {
+
+.username, .password {
   padding: 12px;
   margin-top: 20px;
   width: 240px;
+
 }
 
 .fa {

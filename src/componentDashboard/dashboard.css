@@ -1,52 +1,54 @@
 body {
-    background-color: #f9f9f9;
-    font-family: 'Montserrat', sans-serif;
-  }
+  background-color: #f9f9f9;
+  font-family: 'Montserrat', sans-serif;
+}
 
 
-  /*=============
+/*=============
   DashboardHeader
   ==============*/
 
-  .name-app {
-    display: flex;
-    justify-content: space-between;
-    align-content: baseline;
-  }
- 
- 
-  .logoDashboard {
-    display: flex;
-    margin-top: 1em;
-    margin-left: 3em;   
-  }
-   
-   .nav-dashboard {
-     display: flex;
-     list-style: none;
-     margin-top: 3em; 
-   }
- 
-   .dashboard-logo {
-     display: flex;
-     border:4px solid black;
-     border-radius: 3px;
-     margin-top: 1em;
-     height: 2px;
-     padding:19px;  
-   }
-  /*==================
+.name-app {
+  display: flex;
+  justify-content: space-between;
+  align-content: baseline;
+}
+
+.logoDashboard {
+  display: flex;
+  margin-top: 1em;
+  margin-left: 3em;
+}
+
+.nav-dashboard {
+  display: flex;
+  list-style: none;
+  margin-top: 3em;
+}
+
+.dashboard-logo {
+  display: flex;
+  border: 4px solid black;
+  border-radius: 3px;
+  margin-top: 1em;
+  height: 2px;
+  padding: 19px;
+}
+
+
+/*==================
    end-DashboardHeader
   =====================*/
 
 
-  /*=============
+/*=============
    DashboardMain
   ==============*/
+
 .dashboard-main {
   display: flex;
   margin-right: 45em;
-  
+  font-size: 14px;
 }
 
 .dashboard-left {
@@ -58,18 +60,14 @@ body {
 .head {
   padding-bottom: 1px;
   font-size: 18px;
-  
-  
 }
-.head1{
+
+.head1 {
   display: flex;
-  font-size: 18px; 
-  
+  font-size: 18px;
 }
 
-
-
-.dashboard-left li a:hover{
+.dashboard-left li a:hover {
   background-color: #08aac7;
   color: #fff;
 }
@@ -80,17 +78,18 @@ body {
   margin-top: 3em;
   margin-left: 6em;
 }
-.dashboard-middle li a:hover{
+
+.dashboard-middle li a:hover {
   border: 1px solid #08aac7;
   background-color: #08aac7;
   color: #fff;
 }
 
-
-
-.svg-btn{
+.svg-btn {
   background-image: url('../componentDashboard/add.svg');
   display: flex;
+  margin-left: 8em;
+  margin-top: -3.2em;
   width: 17px;
   height: 17px;
   background-color: #f9f9f9;
@@ -98,17 +97,83 @@ body {
   border-radius: 50%;
   background-repeat: no-repeat;
   background-position: center;
-  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
-  font-size: 0;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
 
-}
 .fa-plus-square-o {
- background-color: #f9f9f9;
- font-size: 22px;
- 
- 
+  background-color: #f9f9f9;
+  font-size: 22px;
 }
+
 
 /*=================
   end-DashboardMain
  =================*/
+
+
+/*=================
+    TableDashboard
+ =================*/
+
+table,
+th,
+tr {
+  border-collapse: collapse;
+  width: 60%;
+  text-align: left;
+  font-size: 12px;
+  margin-top: 2em;
+  margin-left: 9em;
+}
+
+td,
+th {
+  padding: 5px;
+}
+
+th {
+  font-size: 14px;
+}
+
+.dashboard-table {
+  border: 1px solid #F6F3F3;
+  width: 45%;
+  height: 400px;
+  margin-left: 38em;
+  margin-top: -11.5em;
+  margin-bottom: 3em;
+  box-shadow: 4px -3px 31px #F6E9E9;
+}
+
+.table-head {
+  font-size: 14px;
+}
+
+.headtb {
+  font-size: 12px;
+  color: #08aac7;
+}
+
+.leftinput {
+  width: 9em;
+  border: 2px solid #000;
+}
+
+.middinput {
+  width: 3em;
+  border: 2px solid #000;
+}
+
+.rightinput {
+  width: 3em;
+  border: 2px solid #000;
+}
+
+.total {
+  color: #08aac7;
+}
+
+
+/*==================
+ end- TableDashboard
+ ==================*/
