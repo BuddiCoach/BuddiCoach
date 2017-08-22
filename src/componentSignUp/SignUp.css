@@ -1,0 +1,62 @@
+/*==================
+       Form         
+====================*/
+
+.group-signup-form {
+  margin-top: 5%;
+  margin-left: 35%;
+}
+.signin-link {
+  color: #08aac7;
+  text-decoration: none;
+}
+
+.section-signup {
+  background-color: #08aac7;
+  height: 220px;
+  width: 350px;
+}
+
+.email,
+.username,
+.password {
+  padding: 12px;
+  margin-top: 20px;
+  width: 240px;
+}
+
+.fa {
+  background-color: #10d3f5;
+  padding: 3.5%;
+  margin-top: 14px;
+  margin-left: 14px;
+  width: 25px;
+  height: 18px;
+  text-align: center;
+}
+
+.btn1 {
+  background-color: #fff;
+  border: 2px solid #000;
+  color: #000;
+  padding: 12px 14px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 14px;
+  margin-top: 10px;
+  margin-left: 19em;
+  cursor: pointer;
+}
+
+.app-signup {
+  font-size: 14px;
+  margin-left: 7em;
+}
+
+.signup-button {
+  text-decoration: none;
+  color: #000;
+}
+/*=================
+        end-Form
+    ================*/
