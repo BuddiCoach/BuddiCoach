@@ -100,6 +100,14 @@ body {
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
 }
 
+.svg-btn:hover {
+  cursor: pointer;
+}
+
+#input-addbudget {
+  display: none;
+}
+
 .fa-plus-square-o {
   background-color: #f9f9f9;
   font-size: 22px;
@@ -173,7 +181,191 @@ th {
   color: #08aac7;
 }
 
-
 /*==================
  end- TableDashboard
  ==================*/
+
+ /*==================
+start-ChartDashboard
+===================*/
+.dashboard-chart {
+  display: flex;
+  justify-content: center;
+  border: 1px solid #f6f3f3;
+  margin-left: 38em;
+  margin-top: -11.5em;
+  margin-bottom: 3em;
+  box-shadow: 4px -3px 31px #f6e9e9;
+  width: 45%;
+  height: 400px;
+}
+
+/*==================
+end- ChartDashboard
+===================*/
+
+/*==================
+start-Mediaqueries - nog opschonen
+===================*/
+@media (max-width: 1150px) {
+  .dashboard-table {
+    border: 1px solid #f6f3f3;
+    width: 45%;
+    height: 400px;
+    margin-left: 30em;
+    margin-top: -11.5em;
+    margin-bottom: 3em;
+    box-shadow: 4px -3px 31px #f6e9e9;
+  }
+}
+
+@media (max-width: 1050px) {
+  .dashboard-table {
+    width: 45%;
+    height: 400px;
+    margin-left: 28em;
+    margin-top: -11.5em;
+    margin-bottom: 3em;
+  }
+
+  .dashboard-middle {
+    height: 200px;
+    list-style: none;
+    margin-top: 3em;
+    margin-left: 4em;
+  }
+}
+
+@media (max-width: 970px) {
+  .dashboard-table {
+    width: 45%;
+    height: 400px;
+    margin-left: 28em;
+    margin-top: -11.5em;
+    margin-bottom: 3em;
+  }
+
+  .dashboard-middle {
+    height: 200px;
+    list-style: none;
+    margin-top: 3em;
+    margin-left: 2em;
+  }
+  .dashboard-left {
+    list-style: none;
+    margin-top: 2em;
+    margin-left: 2em;
+  }
+  table,
+  th,
+  tr {
+    border-collapse: collapse;
+    width: 60%;
+    text-align: left;
+    font-size: 12px;
+    margin-top: 2em;
+    margin-left: 5em;
+  }
+}
+
+@media (max-width: 800px) {
+  .dashboard-table {
+    width: 45%;
+    height: 400px;
+    margin-left: 20em;
+    margin-top: -11.5em;
+    margin-bottom: 3em;
+  }
+
+  .dashboard-middle {
+    height: 200px;
+    list-style: none;
+    margin-top: 3em;
+    margin-left: 1em;
+  }
+  .dashboard-left {
+    list-style: none;
+    margin-top: 2em;
+    margin-left: 1em;
+  }
+  table,
+  th,
+  tr {
+    border-collapse: collapse;
+    width: 60%;
+    text-align: left;
+    font-size: 12px;
+    margin-top: 2em;
+    margin-left: 3em;
+  }
+}
+
+@media (max-width: 715px) {
+  .dashboard-table {
+    width: 45%;
+    height: 400px;
+    margin-left: 8em;
+    margin-top: -1em;
+    margin-bottom: 3em;
+    padding: 4em;
+  }
+
+  .dashboard-middle {
+    height: 200px;
+    list-style: none;
+    margin-top: 2em;
+    margin-right: 2em;
+  }
+  .dashboard-left {
+    list-style: none;
+    margin-top: 2em;
+    margin-left: 9em;
+  }
+  table,
+  th,
+  tr {
+    border-collapse: collapse;
+    width: 60%;
+    text-align: left;
+    font-size: 12px;
+    margin-top: 2em;
+    margin-left: 3em;
+    margin-right: 3em;
+  }
+}
+
+@media (max-width: 500px) {
+  .dashboard-table {
+    width: 45%;
+    height: 400px;
+    margin-left: 5em;
+    margin-top: -1em;
+    margin-bottom: 3em;
+  }
+
+  .dashboard-middle {
+    height: 200px;
+    list-style: none;
+    margin-top: 3em;
+    margin-left: 1em;
+  }
+  .dashboard-left {
+    list-style: none;
+    margin-top: 2em;
+    margin-left: 1em;
+  }
+  table,
+  th,
+  tr {
+    border-collapse: collapse;
+    width: 60%;
+    text-align: left;
+    font-size: 12px;
+    margin-top: 2em;
+    margin-left: 3em;
+  }
+}
+
+/*==================
+end-Mediaqueries
+===================*/

@@ -5,9 +5,7 @@ import React, { Component } from 'react';
 
 class TableDashboard extends Component {
 
-
-
-
+    
 
 
 
@@ -46,13 +44,16 @@ class TableDashboard extends Component {
 
                    <tr className="input">
                    <td><input className="leftinput"
-                               type="text" 
+                               type="text"
+                               
                                /></td>
                    <td><input className="middinput"
-                               type="numbers" 
+                               type="numbers"
+                               
                                /></td> 
                    <td><input className="rightinput"
                                type="numbers"
+                               
                                /></td>
                    </tr>
 
