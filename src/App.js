@@ -7,6 +7,7 @@ import SignUp from "./componentSignUp/SignUp";
 
 class App extends Component {
 
+  
   componentDidMount() {
     fetch('/api/message')
       .then(response => response.json())
@@ -22,15 +23,13 @@ class App extends Component {
         }/> 
         <div>
         <Route exact path="/dashboard/" render={() => 
-          <Dashboard />
+          <Dashboard  />
         }/> 
+        </div>
         <div>
           <Route exact path="/signup/" render={() => 
           <SignUp />
           }/>
-        </div>
-        
-        
         </div>
       </div>
     );

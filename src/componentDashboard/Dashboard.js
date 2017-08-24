@@ -1,8 +1,8 @@
 import React, {Component} from 'react';
 import DashboardHeader from './dashboardHeader';
+import DashboardMain from "./dashboardMain";
 import './dashboard.css'
-import DashboardMain from './dashboardMain';
-import TableDashboard from './TableDashboard';
+
 
 
 class Dashboard extends Component {
@@ -15,7 +15,6 @@ class Dashboard extends Component {
           <div className="App">
             <DashboardHeader />
               <DashboardMain  />
-              <TableDashboard />
             </div>
           
         );
