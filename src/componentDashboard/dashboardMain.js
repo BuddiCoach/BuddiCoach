@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import {Link} from 'react-router-dom';
+import './dashboard.css';
 import TableDashboard from "./TableDashboard";
 import ChartDashboard from "./ChartDashboard";
 
@@ -25,13 +26,6 @@ class DashboardMain extends Component {
   showChart = () => {
     this.setState({ displayTable: false });
     console.log("I was clicked and should show chart");
-  };
-
-  showInput = () => {
-    let addBudgetInput = document.getElementsByClassName("input-add-budget");
-    addBudgetInput.classList.add("MyClass");
-    addBudgetInput.classList.remove("input-add-budget");
-    addBudgetInput.style.display = "inline";
   };
 
 
@@ -76,7 +70,7 @@ keyPress=(e) => {
         })
 
         return(
-            <div>
+           //<div>
             <div className="dashboard-main">
                 <ul className= "dashboard-left">
                 <h4 className="head">Dashboard</h4>
@@ -86,7 +80,7 @@ keyPress=(e) => {
                 <ul className="dashboard-middle">
                 <div>
                 <h4 className="head1">Add Budget</h4>
-                <svg   className="svg-btn"
+                <svg className="svg-btn"
                        onClick={this.handleClick}
                        >
                        </svg>
@@ -100,13 +94,16 @@ keyPress=(e) => {
                 </div>
                  {currentMessage}
                </ul>
-            </div>
-            <div>
-            {this.state.displayTable && <TableDashboard displayTable={true} />}
+               <div>
+               {this.state.displayTable && <TableDashboard displayTable={true} />}
               {this.state.displayTable === false &&
                 <ChartDashboard displayTable={false} />}
+               </div>
             </div>
-            </div>
+           // <div>
+           
+            //</div>
+            //</div>
         )
     }     
 }
