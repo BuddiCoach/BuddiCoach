@@ -5,12 +5,72 @@ import React, { Component } from 'react';
 
 class TableDashboard extends Component {
 
+    state= {
+        inputTableLeft: "",
+        inputTableMidd: "",
+        inputTableRight: "",
+        tableItems:[{
+            event: "Celine Dion",
+            budget: "45.00",
+            actual: "45.00"
+          }, {
+            event: "Christmas",
+            budget: "5.00",
+            actual: "10.00"
+          }, {
+            event: "Shopping",
+            budget: "35.00",
+            actual: "40.00"
+          }],
+                      
+
+    }
+
+
+    updateInput = (e) => {
+        this.setState({[e.target.name]: e.target.value});
+      
+    }
+
     
+    keyPressed=(e) => {
+        if(e.which === 13){
+        console.log('value is:', e.target.value); 
+        this.setState({ 
+            inputTableLeft: "",
+            inputTableMidd: "",
+            inputTableRight: "",
+            tableItems: [
+                        {event: this.state.inputTableLeft,
+                         budget: this.state.inputTableMidd,
+                         actual: this.state.inputTableRight},
+                           ...this.state.tableItems
+                        ]
+        }); 
+       
+        
+    }
+} 
 
 
 
 
     render(){
+
+        const showInputTable = this.state.tableItems.map((inputTable, index) => {
+            return  (
+                <tr  className="table-row"> 
+                    <td key={index.event}>{inputTable.event}</td> 
+                    <td key={index.budget}>{inputTable.budget}</td> 
+                    <td key={index.actual}>{inputTable.actual}</td> 
+                    </tr>
+            )
+        })
+
+       
+       
+       
+
         return(
             <div className="dashboard-table"> 
           <table>
@@ -19,40 +79,41 @@ class TableDashboard extends Component {
                 <th className="table-head">Black Friday</th>
                </tr>
                 <tr className="headtb">
-                  <th>#</th> 
+                  <th></th> 
                   <th>Budget</th>
                   <th>Actual</th>
                 </tr>
- 
-                 <tr className="table-row">
-                  <td>Samsung Galaxy s7</td>
-                  <td>150.00</td>
-                  <td>80.00</td>
-                 </tr>
- 
-                  <tr className="table-row">
-                   <td>Hulk Pants</td>
-                   <td>20.00</td>
-                   <td>21.10</td> 
-                  </tr>
-
-                   <tr className="table-row">
-                    <td>Fidget Spinner</td>
-                    <td>1.00</td>
-                    <td>0.70</td>
-                   </tr>
+                
+                 {showInputTable}
+                 
+              
 
                    <tr className="input">
                    <td><input className="leftinput"
                                type="text"
+                               placeholder="add items"
+                               name="inputTableLeft"
+                               value={this.state.inputTableLeft}
+                               onChange={this.updateInput}
+                               onKeyPress={this.keyPressed}
                                
                                /></td>
                    <td><input className="middinput"
                                type="numbers"
+                               placeholder="add items"
+                               name="inputTableMidd"
+                               value={this.state.inputTableMidd}
+                               onChange={this.updateInput}
+                               onKeyPress={this.keyPressed}
                                
                                /></td> 
                    <td><input className="rightinput"
                                type="numbers"
+                               placeholder="add items"
+                               name="inputTableRight"
+                               value={this.state.inputTableRight}
+                               onChange={this.updateInput}
+                               onKeyPress={this.keyPressed}
                                
                                /></td>
                    </tr>
@@ -65,8 +126,7 @@ class TableDashboard extends Component {
 
                    <tr>
                    <td>Start</td>
-                   <td>End</td> 
-                   <td>Add expense</td>
+                   <td>End</td>
                    </tr>
 
                 </tbody>

@@ -7,6 +7,7 @@ import ChartDashboard from "./ChartDashboard";
 
 
 
+
 class DashboardMain extends Component {
 
     state = {
@@ -20,17 +21,17 @@ class DashboardMain extends Component {
 
  showTable = () => {
     this.setState({ displayTable: true });
-    console.log("I was clicked and should show table");
+    //console.log("I was clicked and should show table");
   };
 
   showChart = () => {
     this.setState({ displayTable: false });
-    console.log("I was clicked and should show chart");
+    //console.log("I was clicked and should show chart");
   };
 
 
   handleClick= () => {
- console.log('clicked');
+ //console.log('clicked');
  let showInput = document.getElementById('input-addbudget');
  showInput.style.display= "block"; 
  showInput.focus();
@@ -47,7 +48,7 @@ updateInputValue= (e) => {
 
 keyPress=(e) => {
     if(e.which === 13){
-    console.log('value is:', e.target.value); 
+    //console.log('value is:', e.target.value); 
     this.setState({ 
         inputValue: '',
        messages: [this.state.inputValue, ...this.state.messages]
@@ -70,7 +71,7 @@ keyPress=(e) => {
         })
 
         return(
-           //<div>
+           
             <div className="dashboard-main">
                 <ul className= "dashboard-left">
                 <h4 className="head">Dashboard</h4>
@@ -100,10 +101,7 @@ keyPress=(e) => {
                 <ChartDashboard displayTable={false} />}
                </div>
             </div>
-           // <div>
            
-            //</div>
-            //</div>
         )
     }     
 }
