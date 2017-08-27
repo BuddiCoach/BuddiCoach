@@ -40,6 +40,7 @@ clearInput = () => {
         <div className="group-form">
          <div className="section-form">
              <form>
+                 <div>
                <i className="fa fa-user"/>
               <input className="username" type="text"
                       placeholder="enter username" 
@@ -47,13 +48,16 @@ clearInput = () => {
                       value={username}
                       onChange={(event)=> this.updateUsername(event.target.value)}
                       />
+                      </div>
+                      <div>
               <i className="fa fa-key"/>
               <input className="password" type="password"
                      placeholder="enter password"
                      name="password"
                      value={password}
                      onChange={(event)=> this.updatePassword(event.target.value)} 
-                     />  
+                     /> 
+                 </div> 
                </form>
              </div>
                 <div className="app-btn">

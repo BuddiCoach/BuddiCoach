@@ -9,23 +9,29 @@ class TableDashboard extends Component {
         inputTableLeft: "",
         inputTableMidd: "",
         inputTableRight: "",
-        tableItems:[{
+        id: 4,
+        tableItems: [
+          {
             event: "Celine Dion",
             budget: "45.00",
-            actual: "45.00"
-          }, {
+            actual: "45.00",
+            id: 1
+          },
+          {
             event: "Christmas",
             budget: "5.00",
-            actual: "10.00"
-          }, {
+            actual: "10.00",
+            id: 2
+          },
+          {
             event: "Shopping",
             budget: "35.00",
-            actual: "40.00"
-          }],
-                      
-
-    }
-
+            actual: "40.00",
+            id: 3
+          }
+        ]
+      };
+    
 
     updateInput = (e) => {
         this.setState({[e.target.name]: e.target.value});
@@ -41,14 +47,15 @@ class TableDashboard extends Component {
             inputTableMidd: "",
             inputTableRight: "",
             tableItems: [
-                        {event: this.state.inputTableLeft,
+                        ...this.state.tableItems,
+                        {
+                         event: this.state.inputTableLeft,
                          budget: this.state.inputTableMidd,
-                         actual: this.state.inputTableRight},
-                           ...this.state.tableItems
-                        ]
-        }); 
-       
-        
+                         actual: this.state.inputTableRight,
+                         id: this.state.id++
+                        }
+                    ]
+               });       
     }
 } 
 
@@ -59,16 +66,13 @@ class TableDashboard extends Component {
 
         const showInputTable = this.state.tableItems.map((inputTable, index) => {
             return  (
-                <tr  className="table-row"> 
-                    <td key={index.event}>{inputTable.event}</td> 
-                    <td key={index.budget}>{inputTable.budget}</td> 
-                    <td key={index.actual}>{inputTable.actual}</td> 
+                <tr  key={inputTable.id} className="table-row"> 
+                    <td>{inputTable.event}</td> 
+                    <td>{inputTable.budget}</td> 
+                    <td>{inputTable.actual}</td> 
                     </tr>
             )
         })
-
-       
-       
        
 
         return(
@@ -76,7 +80,7 @@ class TableDashboard extends Component {
           <table>
             <tbody>
                 <tr>
-                <th className="table-head">Black Friday</th>
+                <th className="table-head">black friday</th>
                </tr>
                 <tr className="headtb">
                   <th></th> 
@@ -85,8 +89,6 @@ class TableDashboard extends Component {
                 </tr>
                 
                  {showInputTable}
-                 
-              
 
                    <tr className="input">
                    <td><input className="leftinput"
@@ -100,7 +102,7 @@ class TableDashboard extends Component {
                                /></td>
                    <td><input className="middinput"
                                type="numbers"
-                               placeholder="add items"
+                               placeholder="budget"
                                name="inputTableMidd"
                                value={this.state.inputTableMidd}
                                onChange={this.updateInput}
@@ -109,7 +111,7 @@ class TableDashboard extends Component {
                                /></td> 
                    <td><input className="rightinput"
                                type="numbers"
-                               placeholder="add items"
+                               placeholder="actual"
                                name="inputTableRight"
                                value={this.state.inputTableRight}
                                onChange={this.updateInput}

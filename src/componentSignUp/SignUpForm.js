@@ -34,6 +34,7 @@ class SignUpForm extends Component {
       <div className="group-signup-form">
         <div className="section-signup">
           <form>
+            <div>
             <i className="fa fa-envelope" aria-hidden="true" />
             <input
               className="email"
@@ -43,6 +44,8 @@ class SignUpForm extends Component {
               value={email}
               onChange={event => this.updateEmail(event.target.value)}
             />
+            </div>
+            <div>
             <i className="fa fa-user" />
             <input
               className="username"
@@ -52,6 +55,8 @@ class SignUpForm extends Component {
               value={username}
               onChange={event => this.updateUsername(event.target.value)}
             />
+            </div>
+            <div>
             <i className="fa fa-key" />
             <input
               className="password"
@@ -61,6 +66,7 @@ class SignUpForm extends Component {
               value={password}
               onChange={event => this.updatePassword(event.target.value)}
             />
+            </div>
           </form>
         </div>
         <div className="app-btn">

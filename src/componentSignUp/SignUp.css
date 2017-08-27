@@ -18,8 +18,8 @@
 }
 
 .email,
-.username,
-.password {
+.password,
+.username {
   padding: 12px;
   margin-top: 20px;
   width: 240px;
@@ -28,7 +28,8 @@
 .fa {
   background-color: #10d3f5;
   padding: 3.5%;
-  margin-top: 14px;
+  /* margin-top: 14px; */
+  margin-top: -1%;
   margin-left: 14px;
   width: 25px;
   height: 18px;
@@ -60,3 +61,69 @@
 /*=================
         end-Form
     ================*/
+
+/*====================
+   start-Mediaqueries
+=====================*/
+
+@media (max-width: 750px) {
+  .logoDashboard {
+    display: none;
+  }
+  .group-signup-form {
+    margin-top: 10%;
+    margin-left: 20%;
+  }
+}
+
+@media (max-width: 525px) {
+  .group-signup-form {
+    margin-top: 10%;
+    margin-left: 15%;
+  }
+}
+
+@media (max-width: 450px) {
+  .email,
+  .username,
+  .password {
+    width: 125px;
+  }
+  .fa {
+    padding: 4.5%;
+    margin-left: 18px;
+  }
+  .btn1 {
+    margin-left: 12.5em;
+  }
+  .section-signup {
+    height: 205px;
+    width: 250px;
+    margin-top: 6em;
+    margin-left: 2.3em;
+  }
+  .nav-dashboard {
+    margin-top: 1em;
+    font-size: 12px;
+  }
+
+  .app-signup {
+    margin-left: 3em;
+  }
+}
+
+@media (max-width: 400px) {
+  .section-signup {
+    margin-left: 1em;
+  }
+
+  .app-signup {
+    margin-left: 1.5em;
+    margin-right: 1.5em;
+  }
+
+  .group-signup-form {
+    margin-top: 10%;
+    margin-left: 10%;
+  }
+}
