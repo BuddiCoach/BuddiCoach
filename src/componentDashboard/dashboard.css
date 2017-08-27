@@ -69,20 +69,29 @@ body {
 
 .dashboard-left li a:focus {
   background-color: #08aac7;
-  color: #fff;
+  color: #fff; 
+}
+
+.list {
+  padding: 2px;
 }
 
 .dashboard-middle {
   height: 200px;
   list-style: none;
   margin-top: 3em;
-  margin-left: 6em;
+  margin-left: 6em; 
 }
+
 
 .dashboard-middle li a:focus {
   border: 1px solid #08aac7;
   background-color: #08aac7;
   color: #fff;
+}
+
+li {
+  padding: 1px;
 }
 
 .svg-btn {
@@ -105,7 +114,9 @@ body {
 }
 
 #input-addbudget {
-  display: none;
+ display: none;
+ border: 2px solid black;
+ width: 80%;
 }
 
 .fa-plus-square-o {
@@ -163,17 +174,17 @@ th {
 }
 
 .leftinput {
-  width: 9em;
+  width: 6.5em;
   border: 2px solid #000;
 }
 
 .middinput {
-  width: 3em;
+  width: 3.5em;
   border: 2px solid #000;
 }
 
 .rightinput {
-  width: 3em;
+  width: 3.5em;
   border: 2px solid #000;
 }
 
@@ -204,6 +215,75 @@ start-ChartDashboard
 end- ChartDashboard
 ===================*/
 
+/*==================
+ start-Mediaqueries
+ ==================*/
+
+ @media (max-width: 1150px) {
+  .dashboard-table {
+    margin-left: 9em;
+  }
+}
+
+@media (max-width: 1000px) {
+  .dashboard-table {
+    margin-left: 5em;
+  }
+  .dashboard-middle {
+    margin-left: 2em;
+  }
+}
+
+@media (max-width: 800px) {
+  .dashboard-main {
+    display: inline-block;
+    margin-left: 24%;
+  }
+  .dashboard-middle {
+    margin: -28% -15% 5% 50%;
+  }
+  .dashboard-table {
+    margin-top: 0;
+  }
+}
+
+@media (max-width: 660px) {
+  .dashboard-main {
+    margin-left: 25%;
+  }
+  .dashboard-left {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  .dashboard-middle {
+    margin-bottom: 5%;
+    margin-left: 45%;
+    margin-top: -35%;
+  }
+  .dashboard-table {
+    margin-left: 0;
+    width: 110%;
+  }
+}
+
+@media (max-width: 500px) {
+  .dashboard-main {
+    margin-left: 10%;
+  }
+
+  .dashboard-table {
+    margin-left: 10%;
+  }
+}
+
+@media (max-width: 450px) {
+  .dashboard-main {
+    margin-left: 0;
+  }
+  .dashboard-left {
+    margin-left: 0;
+  }
+}
 
  
 
