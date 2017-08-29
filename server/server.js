@@ -7,6 +7,7 @@
 var app = require('./app');
 var debug = require('debug')('express-react:server');
 var http = require('http');
+var mongoose = require('mongoose');
 
 /**
  * Get port from environment and store in Express.
@@ -76,6 +77,21 @@ function onError(error) {
       throw error;
   }
 }
+
+// connect moongose to mongodb
+  var mongoose = require('mongoose');
+  var USER = process.env.USER;
+  var PASS = process.env.PASS;
+  mongoose.connect(`mongodb://${USER}:${PASS}@ds145263.mlab.com:45263/buddicoach`);
+
+  var db = mongoose.connection;
+  db.on('error', console.error.bind(console, 'connection error:'));
+  db.once('open', function(){
+    console.log("connected successfully");
+  });
+
+ 
+
 
 /**
  * Event listener for HTTP server "listening" event.
