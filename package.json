@@ -9,7 +9,7 @@
     "cors": "^2.8.4",
     "express": "^4.15.3",
     "jade": "^1.11.0",
-    "mongoose": "^4.11.9",
+   "mongoose": "^4.11.7",
     "morgan": "^1.8.2",
     "react": "^15.6.1",
     "react-chartjs-2": "^2.6.1",
