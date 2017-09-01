@@ -1,7 +1,12 @@
 var express = require('express');
+var cors = require('cors');
 var Expense = require('../models/expense.js');
 var Budget = require('../models/budget.js');
 var router = express.Router();
+
+
+router.use(cors())
+
 
 router.get('/message', function(req, res, next) {
   res.json('puss');

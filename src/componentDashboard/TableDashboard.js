@@ -10,6 +10,7 @@ class TableDashboard extends Component {
         inputTableMidd: "",
         inputTableRight: "",
         id: 4,
+        text:"Black Friday",
         tableItems: [
           {
             event: "Celine Dion",
@@ -41,7 +42,7 @@ class TableDashboard extends Component {
     
     keyPressed=(e) => {
         if(e.which === 13){
-        console.log('value is:', e.target.value); 
+        //console.log('value is:', e.target.value); 
         this.setState({ 
             inputTableLeft: "",
             inputTableMidd: "",
@@ -55,7 +56,7 @@ class TableDashboard extends Component {
                          id: this.state.id++
                         }
                     ]
-               });       
+               });
     }
 } 
 
@@ -66,7 +67,7 @@ class TableDashboard extends Component {
 
         const showInputTable = this.state.tableItems.map((inputTable, index) => {
             return  (
-                <tr  key={inputTable.id} className="table-row"> 
+                  <tr key={inputTable.id} className="table-row"> 
                     <td>{inputTable.event}</td> 
                     <td>{inputTable.budget}</td> 
                     <td>{inputTable.actual}</td> 
@@ -80,7 +81,7 @@ class TableDashboard extends Component {
           <table>
             <tbody>
                 <tr>
-                <th className="table-head">black friday</th>
+                <th className="table-head">{this.state.text}</th>
                </tr>
                 <tr className="headtb">
                   <th></th> 
@@ -92,7 +93,7 @@ class TableDashboard extends Component {
 
                    <tr className="input">
                    <td><input className="leftinput"
-                               type="text"
+                               type="text" required
                                placeholder="add items"
                                name="inputTableLeft"
                                value={this.state.inputTableLeft}
@@ -101,7 +102,7 @@ class TableDashboard extends Component {
                                
                                /></td>
                    <td><input className="middinput"
-                               type="numbers"
+                               type="numbers" required
                                placeholder="budget"
                                name="inputTableMidd"
                                value={this.state.inputTableMidd}
@@ -110,7 +111,7 @@ class TableDashboard extends Component {
                                
                                /></td> 
                    <td><input className="rightinput"
-                               type="numbers"
+                               type="numbers" required
                                placeholder="actual"
                                name="inputTableRight"
                                value={this.state.inputTableRight}

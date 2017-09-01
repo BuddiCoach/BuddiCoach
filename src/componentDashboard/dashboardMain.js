@@ -14,7 +14,8 @@ class DashboardMain extends Component {
         inputValue:"",
         messages:['Black friday', 'Christmas', "Tony's birthday" ],
         displayTable: true,
-        isActive: ""    
+        isActive: ""
+           
     }
 
 
@@ -59,7 +60,7 @@ keyPress=(e) => {
    activeLink = () => {
        const linkList= document.querySelector('li a:focus');
        console.log(linkList);
-      this.setState({ isActive: linkList
+      this.setState({ isActive: linkList               
     })
    } 
  
@@ -67,11 +68,13 @@ keyPress=(e) => {
 
 
     render(){
+        
         const currentMessage = this.state.messages.map((inputValue, index) => {
             return (
                 <li onClick={this.activeLink} key={index}><Link to="/dashboard">{inputValue}</Link></li>
             )
-        })
+        
+         })
 
         return(
            
@@ -88,9 +91,9 @@ keyPress=(e) => {
                        onClick={this.handleClick}
                        >
                        </svg>
-                <input type="text" 
+                <input type="text" required
                        placeholder="add budget" 
-                       id="input-addbudget" 
+                       id="input-addbudget"
                        value={this.state.inputValue}
                        onChange={this.updateInputValue}
                        onKeyPress={this.keyPress}

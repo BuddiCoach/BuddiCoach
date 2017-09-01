@@ -12,6 +12,17 @@ class App extends Component {
     fetch('/api/message')
       .then(response => response.json())
       .then(json => this.setState({message: json}));
+
+      let headers = new Headers({
+        'Access-Control-Allow-Origin': '*'
+         
+      });
+ 
+     const fetchBudget = () =>
+      fetch('http://localhost:3001/api/budgets/' , { headers })
+       .then(res => res.json()) 
+       console.log(fetchBudget()) 
+    
   }
     
 
