@@ -143,11 +143,13 @@ tr {
   font-size: 12px;
   margin-top: 2em;
   margin-left: 3em;
+  
 }
 
 td,
 th {
   padding: 5px;
+ 
 }
 
 th {
@@ -162,6 +164,7 @@ th {
   margin-top: 4em;
   margin-bottom: 3em;
   box-shadow: 4px -3px 31px #F6E9E9;
+ 
 }
 
 .table-head {
